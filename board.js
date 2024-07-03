@@ -8,7 +8,7 @@ class Board {
     this.speed = 100; // milliseconds
     this.isGameOver = false;
     this.foodElement = null;
-    this.scoreElement = null;
+    this.scoreElement = document.getElementById("scoreBoard");
   }
 
   setup() {
@@ -16,7 +16,6 @@ class Board {
     this.createBoard();
     this.drawSnake();
     this.drawFood();
-    this.createScore();
 
     // Setup event listeners for keyboard input
     document.addEventListener("keydown", (e) => this.changeDirection(e));
@@ -66,21 +65,6 @@ class Board {
     // Update the position of the foodElement
     this.foodElement.style.left = this.food.position.x + "px";
     this.foodElement.style.top = this.food.position.y + "px";
-  }
-
-  createScore() {
-    const gameBoard = document.getElementById("gameBoard");
-
-    // Create score element if it's not created yet
-    if (!this.scoreElement) {
-      this.scoreElement = document.createElement("div");
-      this.scoreElement.classList.add("score");
-      this.scoreElement.id = "scoreBoard"; // Added ID to score element
-      gameBoard.appendChild(this.scoreElement);
-    }
-
-    // Update score element text
-    this.scoreElement.textContent = `Score: ${this.score}`;
   }
 
   updateScore() {
