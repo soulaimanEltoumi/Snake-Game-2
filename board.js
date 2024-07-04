@@ -142,9 +142,11 @@ class Board {
 
     // Hide the game screen and show the game over screen
     document.getElementById("gameBoard").style.display = "none";
+
     document.getElementById("game-end").style.display = "block";
 
     // Update the final score
     document.getElementById("final-score").textContent = `Score: ${this.score}`;
+    document.getElementById("scoreBoard").style.display = "none";
   }
 }

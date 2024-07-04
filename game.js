@@ -4,19 +4,25 @@ class Game {
     this.startScreen = document.getElementById("game-intro");
     this.gameScreen = document.getElementById("gameBoard");
     this.gameEndScreen = document.getElementById("game-end");
+    this.scoreDisplay = document.getElementById("scoreBoard");
   }
 
   start() {
     // Hide start screen and show game screen
     if (this.startScreen) this.startScreen.style.display = "none";
     this.gameScreen.style.display = "block";
+    this.scoreDisplay.style.display = "block";
+
     this.board.setup();
     this.board.start();
   }
 
   gameOver() {
     // Show end screen
-    if (this.gameEndScreen) this.gameEndScreen.style.display = "block";
+    if (this.gameEndScreen) {
+      this.gameEndScreen.style.display = "block";
+      this.scoreDisplay.style.display = "none";
+    }
   }
   updateScore(points) {
     this.score += points;
