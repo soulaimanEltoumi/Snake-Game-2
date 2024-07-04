@@ -7,7 +7,7 @@ class Food {
   generatePosition() {
     let x = Math.floor(Math.random() * (this.boardSize / 10)) * 10;
     let y = Math.floor(Math.random() * (this.boardSize / 10)) * 10;
-    return { x: x, y: y };
+    return { x, y };
   }
 
   respawn() {
