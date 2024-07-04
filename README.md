@@ -4,19 +4,14 @@
 
 The Snake Game is a classic snake game developed using HTML, CSS, and JavaScript. In this game, you control a snake that must eat food to grow. The objective is to achieve the highest score possible without colliding with the walls or the snake's own body.
 
-## Installation
+## Play
 
-To run the game on your local machine, follow these steps:
+To run the game follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_username/snake-game.git
+1. Open the following link:
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd snake-game
+   https://soulaimaneltoumi.github.io/Snake-Game-2/
    ```
-3. Open the `index.html` file in your preferred web browser.
 
 ## Usage
 
@@ -35,13 +30,9 @@ To run the game on your local machine, follow these steps:
 
 6. Your final score will be displayed on the screen.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Authors
 
-- **Soulaiman El Toumi** - _Initial work_ - [your_username](https://github.com/your_username)
+- **Soulaiman El Toumi** - (https://github.com/soulaimanEltoumi)
 
 ## Acknowledgments
 

@@ -21,7 +21,6 @@ class Game {
     // Show end screen
     if (this.gameEndScreen) {
       this.gameEndScreen.style.display = "block";
-      this.scoreDisplay.style.display = "none";
     }
   }
   updateScore(points) {
